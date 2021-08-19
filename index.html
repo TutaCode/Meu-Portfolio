@@ -4,10 +4,1035 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
 	<title>Site</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styl.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-	<style type="text/css"></style>
+	<style type="text/css">
+		body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+    margin: 0px;
+    padding: 0px;
+	background-color: purple;
+	display: grid;
+	grid-template-areas: 'box-1 box-2 box-2' 'box-3 box-3 box-3';
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 40px;
+}
+
+/*---------------Box-1---------------*/
+.box-1{
+	height: 90vh;
+	margin-top: 35px;
+	margin-left: 40px;
+	border-radius: 5px;
+	background-color: white;
+	grid-area: box-1;
+
+}
+
+.box-1 img{
+	width: 50%;
+	border: 1px lightgray solid;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+
+.images{
+	margin-top: 80px;	
+}
+
+.nome h3{
+	font-family: arial;
+	text-align: center;
+}
+
+.profission h4{
+	font-family: arial;
+	font-weight: normal;
+	text-align: center;
+	border: 1px lightgray solid;
+	width: 60%;
+	margin: auto;
+	padding: 5px;
+	background-color: lightgray;
+	border-radius: 50px;
+}
+
+.icones{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.whatsapp{
+	color: black;
+	font-size: 40px;
+	padding-right: 10px;
+	cursor: pointer;
+	
+}
+
+.linkedin{
+	color: black;
+	font-size: 40px;
+	cursor: pointer;
+	
+}
+
+.btn_email{
+	margin-top: 70px;
+}
+
+.btn_email a{
+	text-decoration: none;
+
+}
+.btn_email h3{
+	font-family: arial;
+	font-weight: normal;
+	text-align: center;
+	border: 1px blue solid;
+	width: 50%;
+	margin: auto;
+	padding: 5px;
+	color: white;
+	background-color: blue;
+	border-radius: 50px;
+}
+
+/*---------------Box-2---------------*/
+.box-2{
+	height: 90vh;
+	margin-top: 35px;
+	margin-right: 40px;
+	border-radius: 5px;
+	background-color: red;
+	grid-area: box-2;
+	z-index: 0;
+}
+
+/*---------------Sobremim-----------*/
+.black{
+	width: 62.5%;
+	height: 90vh;
+	margin-top: 0px;
+	border-radius: 5px;
+	background-color: white;
+	position: absolute;
+	z-index: 2;
+}
+
+
+.menu {
+    margin-top: 20px;
+    margin-right: 45px;
+    border-radius: 50%;
+    border: 1px purple solid;
+    background-color: purple;
+    float: right;
+}
+
+.menu .icon_menu {
+    color: white;
+    font-size: 200%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon_menu:hover {
+    color: silver;
+}
+
+.box_menu {
+    margin-top: 5px;
+    margin-right: 30px;
+    float: right;
+    display: none;
+}
+
+.box_menu ul {
+    background-color: purple;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 15px;
+}
+
+.box_menu li {
+    color: white;
+    font-family: arial;
+    font-size: 17px;
+    font-weight: normal;
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.box_menu li:hover {
+    color: gray;
+}
+
+.black h1 {
+    font-family: arial;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.black h2 {
+    font-family: arial;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 120px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.conhencimentos {
+    width: 100%;
+    height: 370px;
+    margin-top: 190px;
+    background-color: lightgray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /*justify-content: center;
+    align-items: center;
+    display: flex;*/
+}
+
+
+/*Front-end*/
+.div-block-1{
+	width: 100%;
+	height: 180px;
+	background-color: transparent;
+}
+.conhencimentos .web_front_end {
+    width: 40%;
+    height: 140px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 6px;
+    background-color: white;
+    position: absolute;
+}
+
+.web_front_end .computer {
+    color: purple;
+    font-size: 300%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.web_front_end h3 {
+    font-family: arial;
+    font-size: 20px;
+    margin-top: -47px;
+    margin-left: 110px;
+}
+
+.web_front_end h4 {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: -10px;
+    margin-left: 110px;
+}
+
+
+/*Back-end*/
+.conhencimentos .web_back_end {
+    width: 40%;
+    height: 140px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    /*margin-left: 450px;*/
+    background-color: white;
+    border-radius: 6px;
+}
+
+.web_back_end .hard_disk {
+    color: purple;
+    font-size: 300%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.web_back_end h3 {
+    font-family: arial;
+    font-size: 20px;
+    margin-top: -47px;
+    margin-left: 110px;
+}
+
+.web_back_end h4 {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: -10px;
+    margin-left: 110px;
+}
+
+
+/*Database*/
+
+.div-block-2{
+	width: 100%;
+	height: 180px;
+	background-color: transparent;
+}
+.conhencimentos .web_data_base {
+    width: 40%;
+    height: 140px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.web_data_base .database {
+    color: purple;
+    font-size: 300%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.web_data_base h3 {
+    font-family: arial;
+    font-size: 20px;
+    margin-top: -47px;
+    margin-left: 110px;
+}
+
+.web_data_base h4 {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: -10px;
+    margin-left: 110px;
+}
+
+
+/*Responsive*/
+
+.conhencimentos .web_responsive {
+    width: 40%;
+    height: 140px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 6px;
+    
+}
+
+.web_responsive .responsive {
+    color: purple;
+    font-size: 300%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.web_responsive h3 {
+    font-family: arial;
+    font-size: 20px;
+    margin-top: -47px;
+    margin-left: 110px;
+}
+
+.web_responsive h4 {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: -10px;
+    margin-left: 110px;
+}
+
+/* Fim do Sobremim */
+
+/*----------------Resume-----------*/
+.pink{
+	width: 100%;
+	height: 90vh;
+	margin-top: 0px;
+	border-radius: 5px;
+	/*margin-top: -620px;*/
+	background-color:white;
+	z-index: 1;
+}
+
+.resume_menu {
+    margin-top: 20px;
+    margin-right: 45px;
+    border-radius: 50%;
+    border: 1px purple solid;
+    background-color: purple;
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+
+.resume_menu .resume_icon_menu {
+    color: white;
+    font-size: 200%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.resume_icon_menu:hover {
+    color: silver;
+}
+
+.resume_box_menu {
+    margin-top: 10px;
+    margin-right: 40px;
+    float: right;
+    position: relative;
+}
+
+.resume_box_menu ul {
+    background-color: purple;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 15px;
+}
+
+.resume_box_menu li {
+    color: white;
+    font-family: arial;
+    font-size: 17px;
+    font-weight: normal;
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.resume_box_menu li:hover {
+    color: gray;
+}
+
+.pink h1 {
+    font-family: arial;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.pink h2 {
+    font-family: arial;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 120px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+
+/*Education*/
+
+.education{
+	width: 50%;
+	height: 400px;
+	background-color: transparent;
+}
+
+.education .formation {
+    color: purple;
+    font-size: 300%;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+.education h2 {
+    color: black;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-left: 100px;
+}
+
+.education h3 {
+    font-family: arial;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+
+.education h4 {
+    font-family: arial;
+    font-weight: normal;
+    margin-top: -10px;
+    margin-left: 100px;
+}
+
+
+/*Experience*/
+
+.experience {
+	width: 50%;
+	height: 400px;
+	background-color: transparent;
+    margin-top: -400px;
+    margin-right: 0px;
+    float: right;
+}
+
+.experience .experiencia {
+    color: purple;
+    font-size: 300%;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+.experience h2 {
+    font-weight: bold;
+    margin-top: -40px;
+    margin-left: 100px;
+}
+
+.experience h3 {
+    font-family: arial;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+
+.experience h4 {
+    font-family: arial;
+    font-weight: normal;
+    margin-top: -10px;
+    margin-left: 100px;
+}
+
+
+/*Nivel de conhencimentos/codificar*/
+
+.nivel_de_conhencimento {
+	width: 100%;
+	height: 215px;
+    margin-top: -80px;
+    margin-left: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:white;
+}
+
+.codificar h3 {
+    font-family: arial;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.block-1{
+	width: 40%;
+	height: 150px;
+	margin-top: 40px;
+	margin-left: 30px;
+	background-color: transparent;
+}
+
+.codificar .program_html {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+.codificar .program_css {
+	width: 80%;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+.codificar .program_js {
+	width: 65%;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+.block-2{
+	width: 40%;
+	height: 150px;
+	float: right;
+	margin-top: -150px;
+	margin-right: 30px;
+	background-color: transparent;
+}
+
+.codificar .program_php{
+	width: 70%;
+    font-family: arial;
+    font-size: 15px;
+    font-weight:normal;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+
+.codificar .program_mysql{
+	width: 65%;
+    font-family: arial;
+    font-size: 15px;
+    font-weight:normal;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+.codificar .program_bootsrap{
+	width: 60%;
+    font-family: arial;
+    font-size: 15px;
+    font-weight:normal;
+    margin-top: 0px;
+    margin-left:0px;
+    padding: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+/*----------------Fim de Resume-----------*/
+.box-3{
+	height: 90vh;
+	margin-top: 30px;
+	margin-right: 20px;
+	background-color: blue;
+	/*grid-area: box-3;
+	margin-top: -100px;
+	margin-left: 340px;
+	position: relative;*/
+}
+
+   /*...........Para deixa Lanscape................*/
+      /*@media (orientation:landscape) {
+        .container {
+            width: 100%;
+            height: 300vh;
+        }
+
+        .box-1{
+
+            background-color: red;
+        }
+
+        .black{
+            width: 100%;
+            background-color: blue;
+            display: none;
+        }
+
+        .box-1 img{
+            margin-top: -60px;
+        }
+
+    }*/
+
+  /*............Para tela até de 1024px.............*/
+@media screen and (max-width: 1024px) and (min-width: 767px){
+    .container{
+        height: 300vh;
+        margin-left: 0px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 'box-1 box-1' 'box-2 b0x-2';
+        background-color: transparent;
+    }
+
+    .box-1{
+        width: 100vw;
+        height: 140vh;
+        margin-top: 0px;
+        margin-left: 0px;
+        background-color: #cc00cc;
+    }
+
+    .box-2{
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0px;
+        background-color: transparent;
+    }
+
+    .black{
+        width: 100%;
+        margin-left: 0px;
+        background-color: white;
+    }
+
+    .pink{
+        width: 100%;
+        margin-top: 0px;
+        margin-left: -17px;
+        background-color: white;
+        z-index: 3;
+    }
+
+    .pink h1{
+        margin-left: 40px;
+    }
+
+    .pink h2{
+        margin-left: 40px;
+    }
+
+    .resume_menu{
+        /*margin-left: 672px;
+        float: left;*/
+    }
+
+    .resume_box_menu{
+        /*margin-left: 430px;
+        float: left;*/
+    }
+
+    .education .formation{
+        margin-left: 40px;
+    }
+
+    .education h2{
+        margin-left: 130px;
+    }
+
+    .education h3{
+        margin-left: 130px;
+    }
+
+    .education h4{
+        margin-left: 130px;
+    }
+
+    .experience h2{
+        margin-left: 100px;
+    }
+
+    .codificar{
+        margin-left: 20px;
+    }
+}
+
+  /*............Para tela menos de 767px.............*/
+@media screen and (max-width: 767px) {
+  			.container {
+  					width: 100%;
+  					height: 200vh;
+                    background-color: white;
+    				grid-template-columns: 1fr;
+    				grid-template-areas: 'box-1 box-1' 'box-2 box-2';
+  			
+  			}
+
+        /* A div do box-1*/    
+
+  			.box-1{
+  				width: 100%;
+                height: 130vh;
+                margin: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: absolute;
+                background-color: purple;
+                border-radius: 0px;
+  			}
+
+            .nome h3{
+                color: white;
+            }
+
+            .profission h4{
+                color: purple;
+                font-weight: bold;
+                background-color: white;
+            }
+
+            .whatsapp{
+                color: white;
+            }
+
+            .linkedin{
+                color: white;
+            }
+
+            .btn_email{
+                margin-top: 50px;
+            }
+
+            .btn_email h3{
+                color: purple;
+                font-weight: bold;
+                background-color: white;
+                border: 1px white solid;
+            }
+        /*Fim da div box-1*/
+  			.box-2{
+  				width: 100%;
+                height: 100vh;
+                margin-top: 900px;
+                background-color: lightgray;
+                border-radius: 0px;
+  				/*margin-left: 0px;
+  				background-color: purple;
+  				justify-content: center;
+  				align-items: center;
+  				display: flex;*/
+  			}
+
+  			.black{
+  				width: 100%;
+                height: 100vh;
+                margin-top: 200px;
+                background-color: lightgray;
+  			}
+
+            .black h1{
+                color: purple;
+                margin-top: -170px;
+                text-align: center;
+            }
+
+            .black h2{
+                color: purple;
+                margin-top: -70px;
+                text-align: center;
+                display: none;
+            }
+
+            .menu{
+                display: none;
+            }
+
+            .box_menu{
+                display: none;
+            }
+
+            .conhencimentos{
+                width: 100%;
+                height: 100vh;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: 0;
+                position: absolute;
+                margin-top: -100px;
+            }
+
+            .conhencimentos .web_front_end{
+                width: 100%;
+                margin: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                position: absolute;
+                background-color: white;
+                margin-top: 0px;
+                border-radius: 0px;
+            }
+
+            .conhencimentos .web_back_end{
+                width: 100%;
+                margin: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                position: absolute;
+                background-color: white;
+                margin-top: 200px;
+                border-radius: 0px;
+            }
+
+            .conhencimentos .web_responsive{
+                width: 100%;
+                margin: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                position: absolute;
+                background-color: white;
+                margin-top: 400px;
+                border-radius: 0px;
+            }
+
+            .conhencimentos .web_data_base{
+                width: 100%;
+                margin: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                position: absolute;
+                background-color: white;
+                margin-top: 600px;
+                border-radius: 0px;
+            }
+        /*Inicio da div pink*/
+            .pink{
+                width: 100%;
+                height: 100vh;
+                margin-top: 1100px;
+                border-radius: 0px;
+                color: purple;
+                background-color: lightgray;
+                position: absolute;
+                display: none;
+            }
+
+            .pink h2{
+                display: none;
+            }
+
+            .resume_menu{
+                display: none;
+            }
+
+            .resume_box_menu{
+                display: none;
+            }
+
+            .carreira_professional{
+                width: 100%;
+                height: 50vh;
+                margin-top: 100px;
+                background-color:white;
+                display: none;
+                border-bottom: 15px lightgray solid;
+            }
+
+            .education{
+                display: none;
+            }
+
+            .education h2{
+                color: purple;
+                display: block;
+            }
+
+            .experience h2{
+                display: block;
+            }
+
+            .nivel_de_conhencimento{
+                width: 100%;
+                display: block;
+                
+            }
+
+            .codificar{
+                width: 100%;
+                height: 90vh;
+                margin-top: 170px;
+                padding-top: 5px;
+                background-color: white;
+            }
+
+            .codificar h3{
+                text-align: center;
+            }
+
+            .block-1{
+                width: 100%;
+                margin-left: 0px;
+                
+            }
+
+            .codificar .program_html{
+                height: 30px;
+                padding-top: 20px;
+                font-weight: bold;
+                border-radius: 20px;
+                background-color: purple;
+            }
+
+            .codificar .program_css{
+                height: 30px;
+                padding-top: 20px;
+                font-weight: bold;
+                border-radius: 20px;
+                background-color: purple;
+            }
+
+            .codificar .program_js{
+                width: 70%;
+                height: 30px;
+                padding-top: 20px;
+                font-weight: bold;
+                border-radius: 20px;
+                background-color: purple;
+            }
+
+            .block-2{
+                width: 100%;
+                margin-top: 80px;
+                margin-left: 0px;
+                float: left;
+            }
+
+            .codificar .program_php{
+                width: 63%;
+                height: 30px;
+                padding-top: 20px;
+                font-weight: bold;
+                border-radius: 20px;
+                background-color: purple;
+            }
+
+            .codificar .program_mysql{
+                width: 60%;
+                height: 30px;
+                padding-top: 20px;
+                font-weight: bold;
+                border-radius: 20px;
+                background-color: purple;
+            }
+
+            .codificar .program_bootsrap{
+                width: 55%;
+                height: 30px;
+                padding-top: 20px;
+                font-weight: bold;
+                border-radius: 20px;
+                background-color: purple;
+            }
+
+	}
+
+
+	</style>
 </head>
 <body>
 	<div class="container">
